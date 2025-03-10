@@ -1,6 +1,19 @@
 html {
     font-size: 16px;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #content {
@@ -10,17 +23,25 @@ html {
 }
 
 #header {
-    padding: 10px;
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
 }
 
 #header > img {
-    max-width: 168px;
+    width: 20vw;
+}
+
+@media screen and (min-width: 1000px) {
+    #header > img {
+      max-width: 300px;
+    }
 }
 
 #header > h1 {
-    margin: 0;
+    margin: auto 0;
     padding: 10px;
+    font-size: 5vw;
 }
 
 #table {
@@ -30,14 +51,29 @@ html {
     flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1000px) {
+    #table {
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+}
+
 #table > .item {
-    width: 100%;
-    max-width: 750px;
-    padding: 10px;
-    margin: 5px;
     border: 1px solid black;
-    border-radius: 65px;
-    background-color: #faee01;
+    background-color: #ffffff;
+
+    margin: 15px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+@media screen and (min-width: 1000px) {
+    #table > .item {
+        width: 12vw;
+        border: none;
+    }
 }
 
 .page_link {
@@ -52,12 +88,24 @@ html {
 }
 
 .page_link > .icon {
-    max-width: 25%;
-    max-width: 100px;
+    width: 20vw;
     margin: 0px 45px 0px 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .page_link > .icon {
+        margin: 0px;
+        width: 100%;
+    }
 }
 
 .page_link > .label {
     font-weight: bold;
     font-size: 18pt;
 }
+
+@media screen and (min-width: 1000px) {
+    .page_link > .label {
+      display: none;
+    }
+  }
