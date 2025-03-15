@@ -109,3 +109,8 @@ a {
       display: none;
     }
   }
+
+  .footer {
+    height: 200px;
+    background-color: black;
+  }
